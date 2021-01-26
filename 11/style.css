@@ -1,0 +1,81 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 10px 0 0;
+}
+
+/* Фикс */
+
+.fix-main {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.fix-1,
+.fix-2 {
+    width: 425px;
+    padding: 10px;
+
+    background-color: #c2c2c2;
+    border-radius: 10px;
+}
+
+.fix-1 {
+    margin-right: 25px;
+}
+
+@media (max-width: 500px) {
+    .fix-main {
+        flex-direction: column;
+    }
+
+    .fix-1 {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+/* Резина */
+
+.fluid-main {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.fluid-1,
+.fluid-2 {
+    width: 50%;
+    padding: 10px;
+
+    background-color: #c2c2c2;
+    border-radius: 10px;
+}
+
+.fluid-1 {
+    margin-right: 25px;
+}
+
+@media (max-width: 500px) {
+    .fluid-main {
+        flex-direction: column;
+    }
+
+    .fluid-1,
+    .fluid-2 {
+        width: 100%;
+    }
+
+    .fluid-1 {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
