@@ -1,0 +1,166 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.container {
+  max-width: 1810px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+  min-height: 100px;
+
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header__logo {
+  width: 224px;
+  height: 72px;
+  margin: 14px 10px 0 0;
+}
+
+.header__nav {
+  width: 710px;
+  margin-left: auto;
+  margin-right: 71px;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 36px 0 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav__link {
+  padding-bottom: 10px;
+
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid #FF9900;
+}
+
+.header__nav-link:active {
+  border-bottom: 2px solid #FF9900;
+  color: #FF9900;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.header__search {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 40px 12px 0 0;
+}
+
+.header__search:hover .search__icon {
+  fill: #FF9900;
+}
+
+.header__search:hover .search__circle {
+  stroke: #FF9900;
+}
+
+.header__search:active .search__icon {
+  fill: #E1670E;
+}
+
+.header__search:active .search__circle {
+  stroke: #E1670E;
+}
+
+/*banner*/
+
+.bannner-container {
+  height: 620px;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  padding-left: 78px;
+  padding-top: 103px;
+}
+
+.banner__title {
+  width: 850px;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 70px;
+  line-height: 85px;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 32px;
+}
+
+.banner__subtitle {
+  width: 850px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 97px;
+}
+
+.banner__btn {
+  width: 280px;
+  height: 80px;
+  padding: 25px 37px;
+  background-color: #FF9900;
+}
+
+.banner__btn:hover {
+  background-color: rgba(255, 153, 0, 0.6);
+  cursor: pointer;
+}
+
+.banner__btn:active {
+  background-color: #E1670E;
+  cursor: pointer;
+}
+
+.banner__btn-link {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
